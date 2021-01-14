@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Forecast - Weather App</title>
+</head>
+<body>
+    <div class="main-content">
+    {{>header}}
+
+    <div class="weather-info">
+        {{!-- location-name --}}
+        {{!-- icon --}}
+        {{!-- other-info --}}
+        <h2>{{locationName}}</h2>
+        <p>{{country}}</p>
+        <img class="weatherIcon" src={{weatherIcon}}>
+        <p>weather description: {{weatherDiscription}}</p>
+        <p>temperature: {{temperature}}</p>
+        <p>precip: {{precip}}</p>
+        <p>feelslike: {{feelslike}}</p>
+    </div>
+    </div>
+
+    {{>footer}}
+</body>
+</html>
